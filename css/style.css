@@ -44,7 +44,6 @@ hr {
 
 .inventory{
     font-size: 12px;
-    table-layout: fixed;
     width: 100%;
     overflow: auto;
 }
