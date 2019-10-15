@@ -1,0 +1,57 @@
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+td {
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+hr {
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.title {
+    padding: 25px 25px;
+    background: #6CC551;
+    text-align: center;
+}
+
+.title ul li{    
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;    
+}
+
+.buttons{
+    font-size: 20px;
+    padding: 50px 25px;
+    width: 100%;
+    background: #1abc9c;
+    text-align: center;
+}
+
+.inventory{
+    font-size: 12px;
+    table-layout: fixed;
+    width: 100%;
+    overflow: auto;
+}
+
+.tags{
+    font-size: 20px;  
+    margin: 0;
+    padding: 0px 0;
+    background-color: #ddd;
+}
