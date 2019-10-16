@@ -21,6 +21,10 @@ hr {
     margin-bottom: 1px;
 }
 
+textarea {
+    width: 100%;
+}
+
 .title {
     padding: 25px 25px;
     background: #6CC551;
