@@ -11,26 +11,6 @@ db.changes({
     live: true
 }).on('change', showProducts);
 
-/*var request = new XMLHttpRequest();
-request.open("GET", "../data.json");
-request.onload = function () {
-    var data = JSON.parse(request.responseText);
-    append_json(data);
-};
-request.send();*/
-
-/*function append_json(data) {
-    data.forEach(function (object) {
-        var tr = document.createElement("tr");
-        tr.innerHTML = "<td>" + object.name + "</td>" +
-            "<td>" + object.desc + "</td>" +
-            "<td>R$" + (object.price).toFixed(2) + "</td>" +
-            "<td>" + object.category + "</td>" +
-            "<td>" + "</button>" + "<button class='buttons' onclick='editItem()'>" + "Edit" + "</button>" + "<button class='buttons' onclick='deleteItem()'>" + "Delete" + "</td>"
-        table.appendChild(tr);
-    });
-}*/
-
 function showProducts() {
     $("table tr").remove();
     var trow = document.createElement("tr");
@@ -54,16 +34,6 @@ function showProducts() {
                 "<td>" + object.doc.category + "</td>";
             var td = document.createElement('td');
             var btn = document.createElement('button');
-            btn.innerHTML = "Edit";
-            btn.type = "button";
-            btn.className = "buttons";
-            btn.onclick = (function (object) {
-                return function () {
-                    editItem(object.doc);
-                }
-            })(object);
-            td.appendChild(btn);
-            btn = document.createElement('button');
             btn.innerHTML = "Delete";
             btn.type = "button";
             btn.className = "buttons";
@@ -131,5 +101,3 @@ function cancelItem(o) {
         addingItem = false;
     }
 }
-
-function editItem(o) {}
